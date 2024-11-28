@@ -22,10 +22,10 @@ let max = 0;
 let maxYear = 0
 for (let a = 1; a <= 45; a++) {
     let year = a * a;
-    let last2 = powLast4Digits(year, year);
-    console.log(a, year, last2);
-    if (last2 > max) {
-        max = last2;
+    let last4 = powLast4Digits(year, year);
+    console.log(a, year, last4);
+    if (last4 > max) {
+        max = last4;
         maxYear = year; 
     }
 }
